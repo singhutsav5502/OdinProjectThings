@@ -1,0 +1,38 @@
+html{
+    box-sizing:border-box;
+    /* font-family: lato; */
+}
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+
+.container{
+    display:flex;
+}
+.container.top div{
+    background-color: rgba(0, 255, 255, 0.548);
+    border: 2px solid blue;
+    height:25px;
+    margin:25px;
+    width:150px;
+}
+.container.top .three{
+    margin-left:auto;
+}
+.mid div{
+    background-color:rgba(255, 0, 0, 0.849);
+    border:2px solid rgb(202, 0, 0);
+    flex:1;
+    margin:25px;
+}
+.container.mid .left{
+    height:400px;
+}
+.container.mid .right{
+    background-color: white;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    height:400px;
+    justify-content: center;
+}
