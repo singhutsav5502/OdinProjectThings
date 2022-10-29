@@ -22,7 +22,7 @@ html{
 }
 .header .one{
     font-size:24px;
-    font-style:bold;
+    font-weight:900;
     color:#F9FAF8;
 }
 .header.right div{
@@ -62,7 +62,7 @@ html{
 .SignUp{
     background-color: #3882F6;
     font-size:18px;
-    font-style:bold;
+    font-weight:900;
     color:#F9FAF8;
     width:fit-content;
     padding:5px 25px;
@@ -142,7 +142,7 @@ html{
 .Quoted{
     align-self:  flex-end;
     font-size:24px;
-    font-style:bold;
+    font-weight:900;
     color:#1F2937;
 }
 
@@ -188,4 +188,14 @@ html{
     font-style: bold;
 
 
+}
+/* Footer */
+.Footer{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
 }
