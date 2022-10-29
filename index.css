@@ -37,7 +37,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:500px;
+    height:50vh;
 }
 .Left{
     display: flex;
@@ -85,6 +85,7 @@ html{
     display:flex;
     flex-direction: column;
     align-items: center;
+    height:50vh;
 }
 
 .InfoHead{
@@ -115,4 +116,76 @@ html{
     color: #373f49;
     margin:5px 0;
     text-align: center;
+    margin-bottom:100px;
+}
+
+/* Quote */ 
+.Quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    height:500px;
+}
+.QuoteBox{
+    display: flex;
+    flex-direction: column;
+}
+.QuoteText{
+    font-size:36px;
+    font-style: italic;
+    color:#373f49;
+    flex-wrap: wrap;
+    width:1000px;
+    margin:50px;
+}
+.Quoted{
+    align-self:  flex-end;
+    font-size:24px;
+    font-style:bold;
+    color:#1F2937;
+}
+
+/* Call to action */
+
+.CTA{
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CTAbox{
+    background-color:#3882F6;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width:60vw;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+.CTAtext{
+    display: flex;
+    flex-direction: column;
+    margin-left:100px;
+}
+.CTAHero{
+    font-size: 24px;
+    font-style: bold;
+    color: #F9FAF8;
+}
+.CTASub{
+    font-size: 18px;
+    font-style: italic;
+    color: #E5E7EB;
+}
+.CTASU{
+    margin: 0px 100px;
+    font-size:18px;
+    color: #F9FAF8;
+    border: 2px solid #F9FAF8;
+    padding:5px 25px;
+    border-radius: 5px;
+    font-style: bold;
+
+
 }
