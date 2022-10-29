@@ -22,7 +22,7 @@ html{
 }
 .header .one{
     font-size:24px;
-    font-weight:bold;
+    font-style:bold;
     color:#F9FAF8;
 }
 .header.right div{
@@ -42,8 +42,8 @@ html{
 .Left{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 50px;
+    margin:50px;
+    margin-right:50px;
     width:450px;
 }
 .Left div{
@@ -52,7 +52,7 @@ html{
 .HeroText{
     font-size: 48px;
     color: #F9FAF8;
-    font-weight: bold;
+    font-style: bold;
 }
 .SubText{
     font-size:18px;
@@ -62,7 +62,7 @@ html{
 .SignUp{
     background-color: #3882F6;
     font-size:18px;
-    font-weight:900;
+    font-style:bold;
     color:#F9FAF8;
     width:fit-content;
     padding:5px 25px;
@@ -79,3 +79,40 @@ html{
     
 }
 
+/* Info */
+
+.Info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InfoHead{
+    color:#1F2937;
+    font-size:36px;
+    font-style: bold;
+    margin:40px;
+}
+.InfoContent{
+    display:flex;
+    flex-direction: column;
+    margin:0 30px;
+}
+.InfoBoxMain{
+    display:flex;
+    justify-content:space-around;
+}
+.InfoBox{
+    border:3px solid #3882F6;
+    width:170px;
+    height:170px;
+    border-radius:25px;
+}
+.InfoText{
+    flex-wrap: wrap;
+    width: 170px;
+    font-size:18px;
+    color: #373f49;
+    margin:5px 0;
+    text-align: center;
+}
