@@ -1,38 +1,81 @@
 html{
     box-sizing:border-box;
-    /* font-family: lato; */
+    font-family: Roboto;
+}
+*{
+    margin:0px;
+    padding:0px;
 }
 *,*:before,*:after{
     box-sizing:inherit;
 }
 
-.container{
+/* HEADER */ 
+.header{
+    display:flex;
+    background-color:#1F2937;
+    align-items:center;
+    justify-content: space-around;
+}
+.header.right{
     display:flex;
 }
-.container.top div{
-    background-color: rgba(0, 255, 255, 0.548);
-    border: 2px solid blue;
-    height:25px;
-    margin:25px;
-    width:150px;
+.header .one{
+    font-size:24px;
+    font-weight:bold;
+    color:#F9FAF8;
 }
-.container.top .three{
-    margin-left:auto;
+.header.right div{
+    color:#E5E7EB;
+    font-size: 18px;
+    margin:15px;
 }
-.mid div{
-    background-color:rgba(255, 0, 0, 0.849);
-    border:2px solid rgb(202, 0, 0);
-    flex:1;
-    margin:25px;
-}
-.container.mid .left{
-    height:400px;
-}
-.container.mid .right{
-    background-color: white;
-    border:none;
-    display:flex;
-    flex-direction: column;
-    height:400px;
+
+/* HERO */
+.Hero{
+    background-color: #1F2937;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height:500px;
 }
+.Left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+    width:450px;
+}
+.Left div{
+    margin:5px;
+}
+.HeroText{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+.SubText{
+    font-size:18px;
+    color:#E5E7EB;
+    flex-wrap: wrap;
+}
+.SignUp{
+    background-color: #3882F6;
+    font-size:18px;
+    font-weight:900;
+    color:#F9FAF8;
+    width:fit-content;
+    padding:5px 25px;
+    border-radius: 5px;
+    
+}
+.Right{
+    width:500px;
+    height: 250px;
+    background-color:gray;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    
+}
+
