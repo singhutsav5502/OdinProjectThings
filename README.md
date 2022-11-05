@@ -1,2 +1,2 @@
-# git_test
+# OdinProjectThings
 Odin Project check
