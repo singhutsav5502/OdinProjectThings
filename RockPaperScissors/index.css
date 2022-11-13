@@ -1,0 +1,72 @@
+html{
+    display:block;
+    height:100%;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    background:#212121
+}
+*,*::after,*::before{
+    display: inherit;
+}
+.text{
+    width:100%;
+}
+.text h1, .text p{
+    text-align: center;
+    color:rgb(232, 232, 232);
+}
+.text h1{
+    font-size: 72px;
+    font-family: 'Dancing Script';
+    font-style: bold;
+}
+.text p{
+    font-size: 72px;
+    font-family:'Dancing Script';
+}
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15vh;
+}
+.buttonWrapper{
+    justify-content: space-between;
+    width:33%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    height:250px;
+    width:250px;
+    border:2px solid #212121;
+    border-radius:50%;
+    box-shadow:0px 2px 50px #1b1b1b;
+    background-image:url("./Images/rock-paper-scissors-neon-icons.png");
+    background-repeat: no-repeat;
+    background-position-y:-112px;
+    transition-duration:0.4s;
+}
+.one{
+    background-position-x:-12px ;
+}
+.two{
+    background-position-x:-232px;
+    background-position-y:-90px;
+}
+.three{
+    background-position-x:-432px;
+}
+button:hover{
+    border: 2px solid rgb(167, 167, 167);
+    box-shadow:0px 2px 75px black;
+}
+#message{
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 36px;
+    color:rgb(232,232,232);
+    font-family: 'Dancing Script';
+    font-style: bold;
+}

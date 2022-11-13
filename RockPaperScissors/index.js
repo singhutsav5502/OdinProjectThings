@@ -1,46 +1,47 @@
+
 let humanCode = 0;
 let MachineCode = 0;
-function getInput(){
-    let x = prompt("Enter your Choice: ").toLowerCase();
-    if(x == "rock"){
-        humanCode = 0;
-    }
-    else if(x=="paper"){
-        humanCode = -1;
-    }
-    else{
-        humanCode=1;
-    }
-}
+let humanCounter = 0;
+let MachineCounter = 0;
 function MachineInput(){
     MachineCode= Math.floor(Math.random()*3)-1;
     // Rock is -1 , Scissors is 0 , Paper is 1 for the Machine
 }
-function Round(){
-    getInput();
-    MachineInput();
-    console.log(`Human played ${y} , Machine played ${MachineCode}`);
-    if (humanCode -1 == MachineCode){
-        console.log("tie, round repeat");
-        Round();
-    }
-    else if( humanCode == -1 && MachineCode == 1){
-        console.log("tie, round repeat");
-        Round();
-    }
-    else if(humanCode == MachineCode){
-        console.log("Human Wins");
+function Update(){
 
+    if(humanCounter == 5){
+        document.getElementById("message").innerHTML = "Human Won!";
+        humanCounter = 0;
+        MachineCounter = 0;
+    }
+    else if(MachineCounter ==5){
+        document.getElementById("message").innerHTML = "Machine Won!";
+        humanCounter = 0;
+        MachineCounter = 0;
     }
     else{
-        console.log("Machine Wins");
+        document.getElementById("message").innerHTML = `Human: ${humanCounter} vs Machine: ${MachineCounter}`
     }
-}
 
-function game(){
-    for(let i =0;i<5 ;i++){
-        console.log(`This is round number ${i+1}`);
-        Round();
+}
+function Round(){
+    MachineInput();
+    if (humanCode -1 == MachineCode){
+        document.getElementById("message").innerHTML = "tie,round repeat";
+    }
+    else if( humanCode == -1 && MachineCode == 1){
+        document.getElementById("message").innerHTML = "tie,round repeat";
+    }
+    else if(humanCode == MachineCode){
+        humanCounter += 1;
+        Update();
+    }
+    else{
+        MachineCounter += 1;
+        Update();
     }
 }
-game()
+function getInput(x){
+    humanCode=x;
+    Round();
+}
