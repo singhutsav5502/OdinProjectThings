@@ -9,7 +9,10 @@ html{
 *,*:before,*:after{
     box-sizing:inherit;
 }
-
+a,a:visited{
+    color:#E5E7EB;
+    text-decoration:none;
+}
 /* HEADER */ 
 .header{
     display:flex;
