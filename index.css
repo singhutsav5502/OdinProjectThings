@@ -1,6 +1,7 @@
 html{
     box-sizing:border-box;
     font-family: Roboto;
+    scroll-behavior: smooth;
 }
 *{
     margin:0px;
@@ -19,6 +20,8 @@ a,a:visited{
     background-color:#1F2937;
     align-items:center;
     justify-content: space-around;
+    position:sticky;
+    top:0;
 }
 .header.right{
     display:flex;
